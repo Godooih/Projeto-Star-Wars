@@ -28,7 +28,7 @@ Este projeto é uma aplicação web desenvolvida em Vue.js que permite aos usuá
 
 -Expansão dos cards para exibir informações detalhadas (nome, altura, peso, ano de nascimento, etc.)
 
-##Estrutura do Projeto
+## Estrutura do Projeto
 ```
 star-wars-app/
 │── src/
