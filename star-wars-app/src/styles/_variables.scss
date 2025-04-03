@@ -1,0 +1,9 @@
+$primary-color: #ffcc00;  // Cor principal (amarelo Star Wars)
+$dark-color: #121212;     // Fundo escuro
+$text-color: #fff;        // Cor do texto
+
+body {
+  background-color: $dark-color;
+  color: $text-color;
+  font-family: 'Arial', sans-serif;
+}
