@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Star Wars Favorites - Vue.js Application
 
 ## Descrição
