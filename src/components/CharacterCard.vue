@@ -1,23 +1,24 @@
 <template>
-    <div class="card">
-      <div class="info">
-        <h3>{{ character.name }}</h3>
-        <p><strong>Altura:</strong> {{ character.height }} cm</p>
-        <p><strong>Peso:</strong> {{ character.mass }} kg</p>
-        <p><strong>Nascimento:</strong> {{ character.birth_year }}</p>
-        <button @click="toggleFavorite">Favoritar</button>
-      </div>
+  <div class="card">
+    <div class="info">
+      <h3>{{ character.name }}</h3>
+      <p><strong>Altura:</strong> {{ character.height }} cm</p>
+      <p><strong>Peso:</strong> {{ character.mass }} kg</p>
+      <p><strong>Nascimento:</strong> {{ character.birth_year }}</p>
+      <button @click="toggleFavorite">{{ buttonLabel }}</button>
     </div>
-  </template>
-  
-  <script setup lang="ts">
+  </div>
+</template>
+
+<script setup lang="ts">
 defineProps<{
-    character: any;
-    toggleFavorite: () => void;
-  }>();
-  </script>
-  
-  <style scoped>
+  character: any;
+  toggleFavorite: () => void;
+  buttonLabel: string;
+}>();
+</script>
+
+<style scoped>
 .card {
   background-color: #1a1a1a;
   color: white;
@@ -26,4 +27,3 @@ defineProps<{
   width: 200px;
 }
 </style>
-  
